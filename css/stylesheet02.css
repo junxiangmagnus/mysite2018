@@ -1,0 +1,58 @@
+.container {
+    width: 80%;
+    margin: 120px auto;
+}
+
+.div1 {
+    float: left;
+    width: 98%;
+    height: 100px;
+    outline: 1px solid red;
+    border: 5px solid green;
+    border-radius: 20px;
+    background: cyan url('../images/clefable.png') no-repeat 2% center;
+
+}
+
+.div2 {
+    float: left;
+    width: 48%;
+    height: 100px;
+    outline: 1px solid rgb(81, 255, 0);
+    outline: 1px solid red;
+    border: 5px solid green;
+    border-radius: 20px;
+    background: cyan url('../images/charmander.png') no-repeat 98% center;
+}
+
+
+.div3 {
+    float: left;
+    width: 48%;
+    height: 45px;
+    outline: 1px solid rgb(47, 0, 255);
+    outline: 1px solid red;
+    border: 5px solid green;
+    border-radius: 20px;
+}
+
+.div4{
+    float: left;
+    width: 48%;
+    height: 45px;
+    outline: 1px solid rgb(255, 0, 0);
+    outline: 1px solid red;
+    border: 5px solid green;
+    border-radius: 20px;
+}
+
+.div5{
+    float: left;
+    width: 98%;
+    height: 100px;
+    outline: 1px solid rgb(255, 0, 0);
+    outline: 1px solid red;
+    border: 5px solid green;
+    border-radius: 20px;
+    background: cyan url('../images/abra.png') no-repeat 98% center;
+}
