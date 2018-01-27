@@ -1,0 +1,48 @@
+body{
+    background-color: rgb(10, 10, 10);
+    border-radius: 20px;
+}
+
+.background{
+    height:280px;
+    width:200px;
+    background-color: gold;
+    padding: 50px 10px 10px 10px;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 80px auto;
+    border-radius: 20px;
+}
+
+#result{
+    background-color: black;
+    color: white;
+    margin: 2px 2px 8px 2px;
+    overflow: hidden;
+    position: relative;
+    padding: 10px 100px 10px 10px;
+    border-radius: 20px;
+    float: left;
+    top: -10px;
+    
+}
+
+button{
+    border:0;
+    background-color: black;
+    color: gold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 2px 2px 2px 2px;
+    width: 20%;
+    padding: 10px;
+    border-radius: 20px;
+    
+}
+
+#delete{
+    width: 43%;
+}
+
+#equal{
+    width:43%;
+}

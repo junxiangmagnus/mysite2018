@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang='en'>
+    <head>
+        <meta charset='utf-8'>
+        <meta name="description" content="my first bootstrap page">
+        <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+        <meta name="author" content="Jun Xiang">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>my first bootstrap page</title>
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" href="./css/stylesheet01.css" type="text/css">
+
+        <script src="https://use.fontawesome.com/f5677a05e4.js"></script>
+
+        <script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip(); 
+        });
+        </script>
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="jumbotron">
+                <h1>My First Bootstrap Page</h1>
+                <p>This is some text.</p> 
+            </div>
+        </div> 
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">COMworks</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Company Information</a></li>
+                    <li><a href="#">Corporate Sustainability</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Newsroom</a></li>
+                </ul>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <form class="navbar-form navbar-right">
+                        <div class="form-group">
+                            <input type="text" placeholder="search" class="form-control">
+                            <button type="Submit" class="btn btn-default">Search</button>
+                        </div>    
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                    <div style="padding: 20px; float: left; width: 80%;">
+                        <form action="/action_page.php">
+                            <div class="form-group">
+                                <label for="email">Email address:</label>
+                                <input type="email" class="form-control" id="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="pwd">Password:</label>
+                                <input type="password" class="form-control" id="pwd">
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox"> Remember me</label>
+                            </div>
+                            <button type="submit" class="btn btn-default">Submit</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 text-center">
+                <h1>
+                    About Myself
+                </h1>
+                <hr>
+                <p>
+                    We're glad you're here! We're striving to be the best resource about the Pokémon World on the net, so we cover all aspects of Nintendo's smash hit. Whatever knowledge you have—whether it's about the anime, card game, video game or movies—everything is welcome here. Just sign up for a totally free account and start contributing today! If you run into problems, be sure to give one of our admins a shout! Oh, and don't forget to visit our guidelines and Manual of Style to get some tips on the best ways you can help us grow this database!
+                </p>
+            </div>
+            <div class='row'>            
+                <div class="col-xs-12">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+                    </div>
+                </div>    
+            </div>
+            <hr>
+            <div class='row'>            
+                <div class="col-md-4">
+                    <h2>hello</h2>
+                    <p>
+                        hello hello hello hello hello
+                    </p>
+                    <p>
+                        <a href="#" class="btn btn-default" role="button">View Details &raquo;</a>
+                    </p>
+                </div>          
+                <div class="col-md-4">
+                    <h2>yellow</h2>
+                    <p>hello hello hello hello hello</p>
+                    <p>
+                        <a href="#" class="btn btn-default" role="button">View Details &raquo;</a>
+                    </p>
+                </div>           
+                <div class="col-md-4">
+                    <h2>jello</h2>
+                    <p>hello hello hello hello hello</p>
+                    <p>
+                        <a href="#" class="btn btn-default" role="button">View Details &raquo;</a>
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class='row'>            
+                <div class="col-xs-12 col-md-4 panel-default">
+                    <h3 class="text-center">Operating Hours</h3>
+                    <table class="table table-stripped">
+                        <thead>
+                            <tr class="success">
+                                <th>Day</th>
+                                <th>Hours</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="info">
+                                <td>
+                                    Monday to Thursday
+                                </td>
+                                <td>
+                                    0900 - 1700 hrs
+                                </td>
+                            </tr>
+                            <tr class="danger">
+                                <td>
+                                    Friday and Saturday
+                                </td>
+                                <td>
+                                    1100 - 1500 hrs
+                                </td>
+                            </tr>                    
+                        </tbody>
+                    </table>
+                </div>          
+                <div class="col-xs-12 col-md-4 panel-default">
+                    <div class="embed-responsive embed-responsive-4by3">
+                        <iframe src="https://goo.gl/KUBB7L" class="responsive-embed"></iframe>
+                    </div>
+                </div>           
+                <div class="col-xs-12 col-md-4 panel-default">
+                    <h3>Check Me Out</h3>
+                    <hr>
+                    <div class="list-group">
+                        <a href="#" class="list-group-item"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i>darryl@comworks.com</a>
+                        <a href="#" class="list-group-item"><i class="fa fa-phone fa-2x" aria-hidden="true"></i>+65 512 2992</a>
+                        <a href="#" class="list-group-item"><i class="fa fa-telegram fa-2x" aria-hidden="true"></i>t.me/daryl</a>
+                    </div>          
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-xs-12 text-center">
+                        <ul class="list-inline">
+                            <li>
+                                <a href='https://www.facebook.com' data-toggle="tooltip" title="facebook"'>
+                                    <i class="fa fa-facebook fa-3x" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href='https://www.instagram.com' data-toggle="tooltip" title="instagram">
+                                    <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
+                                 </a>
+                            </li>
+                            <li>
+                                <a href='https://google.com'>
+                                    <i class="fa fa-google fa-3x" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href='https://snapchat.com'>
+                                    <i class="fa fa-snapchat fa-3x" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="text-center">
+                Copyrigh &copy; 2018. COMworks Pte Ltd
+        </footer>
+    </body>
+</html>

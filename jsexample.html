@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script language="javascript" type="text/javascript">
+            // javascript code
+            document.write("<h1>Hello World!</h1>");
+
+            // variable declaration
+            var firstname = "Frank";
+            var lastname = "tay";
+            var fullname = " ";
+            var a = 20;
+            var b = 20;
+            var result = 0;
+
+            // steps or tasks carried out
+            function sumTwoValue(x,y) {
+                z = x + y;
+                return z;
+            }
+            
+            function concatName(firstname, lastname) {
+                fullname = firstname + " " + lastname;
+                return fullname;
+            }
+
+            function computeSum() {
+                var first = document.getElementById("FirstNumber").value;
+                var second = document.getElementById("SecondNumber").value;
+
+                var f = Number(first);
+                var s = Number(second);
+
+                var rslt = sumValues(f,s);
+                alert(rslt)
+            }
+
+            function sumValues(a,b) {
+                var resultSum = a + b;
+                //alert(resultSum)
+                return resultSum;
+            }
+              
+            console.log("Name: " + firstname);
+            alert("result: " + sumTwoValue(a,b) + '\n' + "fullname: " + concatName(firstname,fullname));
+            document.write("Result(a + b) = " + result)
+        </script>
+        <br>
+        <br>
+        Enter Number One:
+        <input type="number" id="FirstNumber" />
+        <br>
+        <br>
+        Enter Number Two:
+        <input type="number" id="SecondNumber" />
+        <br>
+        <br>
+        <input type="button" onclick="computeSum()" value="See Input Values" />
+        <br>
+        <br>
+        <input type="button" onclick="alert(sumTwoValue(a,b))" value="Sum"/>
+        <br>
+        <br>
+        <input type="button" onclick="alert(concatName(firstname,lastname))" value="Show Full Name"
+    </body>
+</html>

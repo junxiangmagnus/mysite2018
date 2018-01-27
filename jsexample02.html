@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script lang="language" type="text/javascript">
+
+            /* global and local variable */
+            var data="global";
+
+            function getData() {
+                var data="local"
+
+                alert("data: " + this.data);
+            }
+
+            // comparators
+            var a = true;
+            var b = true;
+
+            var result1 = (a && b);
+            var result2 = (a || b);
+            var result3 = !(a && b);
+            var result4 = !(a || b);
+
+            document.writeln(result1);
+            document.writeln(result2);
+            document.writeln(result3);
+            document.writeln(result4);
+
+            //if..else condition
+            var num1 = 7;
+            var num2 = 6;
+
+            // equal comparison
+            if (num1 == num2) {
+                document.writeln("<br>num1 equals num2<br>");
+
+            } else{
+                if (num1 < num2){
+                    document.writeln("<br>num1 is less than num2<br>")
+                } else if (num1 > num2){
+                    document.writeln("<br>num1 is greater than num2<br>")
+                }
+
+
+            }
+
+            //arrays
+            var names = ['Sheau', 'Natasha', 'Sharil', 'Joel', 'Gareth'];
+            var numbers = [12, 24, 33, 35, 37, 42];
+            var names2 = [];
+            var numbers2 = [];
+
+            for(i=0; i<names.length; i++) {
+                document.writeln(names[i] + "<br>");
+            }
+
+            var j=0;
+            while(j<numbers.length) {
+                document.writeln(numbers[j] + "<br>");
+                j++;
+            }
+
+            // take everythin in 'names' array and put to 'names2' array
+            for(var i=0; i<names.length; i++) {
+                names2.push(names[i]);
+            }
+
+            for(var i = 0; i < names2.length; i++) {
+                document.writeln(names2[i] + "<br>");
+            }
+            
+            var marks = 65;
+            var grade = "";
+
+            if (marks < 50 ) {
+                grade = "F";
+            } else if ((marks >= 50) && (marks < 60)) {
+                grade = "D";
+            } else if ((marks >= 60) && (marks < 70)){
+                grade = "C";
+            } else{
+                grade = "B";
+            }
+
+            switch(grade){
+                case "A":
+                    document.write("Excellent<br>");
+                    break;
+                case "B":
+                    document.write("Very good<br>");
+                    getData();
+                    break;
+                case "C":
+                    document.write("Good<br>");
+                    break;
+                case "D":
+                    document.write("Average<br>");
+                    break;
+                default: 
+                    document.write("Could be better<br>");
+                    break;
+            }
+
+        </script>
+        <br>
+        <input type="button" value="Show Value" onclick="getData()" />
+    </body>
+</html>
